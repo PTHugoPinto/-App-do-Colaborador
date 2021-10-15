@@ -40,9 +40,8 @@
 	<link rel="stylesheet" href="assets/css/style.css" />
 
 	<link rel="stylesheet" href="/css/transition.css">
-	<link rel="stylesheet" href="/App/assets/css/login.css">
 
-	<link rel="stylesheet" href="./assets/css/login.css">
+	<link rel="stylesheet" href="./assets/css/scrollDown.css">
 
 
 
@@ -149,7 +148,7 @@
 							</ul>
 
 							<!-- The Modal LOGIN ********************-->
-							<a href="#" class="btn btn-primary">Login (Pin)</a>
+							<a href="./login.html" class="btn btn-primary">Login (Pin)</a>
 
 							<!-- The Modal LOGIN END****************************-->
 
@@ -225,13 +224,11 @@
 														HR Local Home Page</a></span>
 											</p>
 										</div>
-
 										<!-- Modal footer -->
 										<div class="modal-footer">
 											<button type="button" class="btn btn-danger"
 												data-bs-dismiss="modal">Close</button>
 										</div>
-
 									</div>
 								</div>
 							</div>
@@ -987,6 +984,34 @@
 
 	<!-- This script use for this page -->
 	<script src="assets/js/heandline.js"></script>
+
+	<!-- REQUEST FULL SCREEN MODE -->
+	<script>
+		function getFullscreenElement() {
+			return document.fullscreenElement ||
+				document.webkitfullscreenElement ||
+				document.mozfullscreenElement ||
+				document.msfullscreenElement;
+		}
+
+		function toggleFullscreen() {
+			if (getFullscreenElement()) {
+				document.exitFullscreen();
+			} else {
+				document.documentElement.requestFullscreen().catch(console.log);
+			}
+		}
+
+		document.addEventListener("dblclick", () => {
+			toggleFullscreen();
+		});
+
+		document.addEventListener("fullscreenchange", () => {
+			console.log("full Screen Changed !")
+		})
+	</script>
+
+
 </body>
 
 </html>
