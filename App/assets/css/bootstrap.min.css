@@ -5930,7 +5930,7 @@ fieldset:disabled .btn {
 .modal-body {
     position: relative;
     flex: 1 1 auto;
-    padding: 1rem
+    padding: 1rem;
 }
 
 .modal-footer {
@@ -6016,7 +6016,7 @@ fieldset:disabled .btn {
 }
 
 @media (max-width:575.98px) {
-    .modal-fullscreen-sm-down {
+    .modal-fullscreen-sm-down .modal-body {
         width: 100vw;
         max-width: none;
         height: 100%;
@@ -6043,7 +6043,7 @@ fieldset:disabled .btn {
 }
 
 @media (max-width:767.98px) {
-    .modal-fullscreen-md-down {
+    .modal-fullscreen-md-down .modal-body {
         width: 100vw;
         max-width: none;
         height: 100%;
@@ -6070,7 +6070,7 @@ fieldset:disabled .btn {
 }
 
 @media (max-width:991.98px) {
-    .modal-fullscreen-lg-down {
+    .modal-fullscreen-lg-down .modal-body {
         width: 100vw;
         max-width: none;
         height: 100%;
@@ -6097,7 +6097,7 @@ fieldset:disabled .btn {
 }
 
 @media (max-width:1199.98px) {
-    .modal-fullscreen-xl-down {
+    .modal-fullscreen-xl-down .modal-body {
         width: 100vw;
         max-width: none;
         height: 100%;
