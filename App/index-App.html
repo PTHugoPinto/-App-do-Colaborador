@@ -40,6 +40,10 @@
 	<link rel="stylesheet" href="assets/css/style.css" />
 
 	<link rel="stylesheet" href="/css/transition.css">
+	<link rel="stylesheet" href="/App/assets/css/login.css">
+
+	<link rel="stylesheet" href="./assets/css/login.css">
+
 
 
 	<!-- Welcome App - FUJITSU SANS Custom Font
@@ -143,18 +147,59 @@
 							<ul class="hero-services">
 								<li>shaping tomorrow with you</li>
 							</ul>
-							<a href="#" class="btn btn-primary">Login (Pin)</a>
-							<!-- Button trigger modal -->
 
-							<!-- The Modal -->
 
-							<button type="button" class="btn btn-primary" data-bs-toggle="modal"
-								data-bs-target="#myModal">
-								Open modal
+							<!-- The Modal LOGIN ********************-->
+							<a href="#" class="btn btn-primary"
+								onclick="document.getElementById('id01').style.display='block'"
+								style="width:auto;">Login (Pin)</a>
+
+
+							<div id="id01" class="modal">
+
+								<form class="modal-content animate" action="/action_page.php" method="post">
+									<div class="imgcontainer">
+										<span onclick="document.getElementById('id01').style.display='none'"
+											class="close" title="Close Modal">&times;</span>
+										<img src="./assets/images/icon/services/Login.png" alt="Avatar" class="avatar">
+									</div>
+
+									<div class="container">
+										<label for="uname"><b>Username</b></label>
+										<input type="text" placeholder="Enter Username" name="uname" required>
+
+										<label for="psw"><b>Password</b></label>
+										<input type="password" placeholder="Enter Password" name="psw" required>
+
+										<button class="btn btn-primary" type="submit">Login</button>
+										<label>
+											<input type="checkbox" checked="checked" name="remember"> Remember me
+										</label>
+										<button type="button"
+											onclick="document.getElementById('id01').style.display='none'"
+											class="btn btn-primary">Cancel</button>
+									</div>
+
+									<div class="container" style="background-color:#f1f1f1">
+										<button type="button"
+											onclick="document.getElementById('id01').style.display='none'"
+											class="btn btn-primary">Cancel</button>
+										<span class="psw">Forgot <a href="#">password?</a></span>
+									</div>
+								</form>
+							</div>
+
+
+							<!-- The Modal LOGIN END****************************-->
+
+
+
+
+							<!-- The Modal MENSAGEM RH ***********************-->
+							<button type="button" class="btn btn-primary_2" data-bs-toggle="modal"
+								data-bs-target="#myModal" style="margin-left: 7px;">
+								Mensagem RH
 							</button>
-
-
-							<!-- The Modal -->
 							<div class="modal fade" id="myModal">
 								<div class="modal-dialog modal-lg">
 									<div class="modal-content">
@@ -231,6 +276,7 @@
 									</div>
 								</div>
 							</div>
+							<!-- The Modal MENSAGEM RH END***********************-->
 						</div><!-- /.hero-content-area -->
 					</div>
 				</div>
@@ -959,6 +1005,9 @@
 
 	<!-- All The JS Files
 			================================================== -->
+
+	<script src="assets/js/login.js"></script>
+
 	<script src="assets/js/jquery.js"></script>
 	<script src="assets/js/popper.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>

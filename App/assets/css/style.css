@@ -2576,6 +2576,7 @@ body:not(.buddypress) .article-content table th {
   color: white !important;
 }
 
+
 /*-------------------------------------------
   -- Animations
 -------------------------------------------*/
@@ -3561,7 +3562,7 @@ input::-moz-focus-inner {
 .btn-primary {
   border-radius: 0;
   color: white;
-  border: 0px solid;
+  border: 2px solid #CC0000;
   position: relative;
   z-index: 1;
   -webkit-transition: ease-in 0.25s;
@@ -3587,6 +3588,40 @@ input::-moz-focus-inner {
   background-color: white;
   color: #cc0000;
 }
+
+
+/*btn primary_2*/
+.btn-primary_2 {
+  border-radius: 0;
+  color: white;
+  border: 2px solid white;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: ease-in 0.25s;
+  transition: ease-in 0.25s;
+  background-color: transparent;
+  padding: 12px 25px;
+}
+
+@media (min-width: 768px) {
+  .btn-primary_2 {
+    padding: 14px 35px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .btn-primary_2 {
+    padding: 16px 50px;
+  }
+}
+
+.btn-primary_2:hover,
+.btn-primary_2:focus {
+  background-color: white;
+  color: #cc0000;
+}
+
+/*btn primary_2 END*/
 
 .form-group-btn {
   margin: 0 -10px -10px;
@@ -5327,6 +5362,10 @@ a:active {
 }
 
 .hero-block .btn-primary {
+  border-radius: 5px;
+}
+
+.hero-block .btn-primary_2 {
   border-radius: 5px;
 }
 
@@ -8074,6 +8113,14 @@ a:active {
   background-color: black;
 }
 
+.comment-respond .form-submit .btn-primary_2 {
+  letter-spacing: 0.1em;
+}
+
+.comment-respond .form-submit .btn-primary_2:hover {
+  background-color: black;
+}
+
 .comment-respond .comment-subscription-form {
   display: none;
 }
@@ -8789,6 +8836,20 @@ a:active {
 
 @media only screen and (max-width: 767px) {
   .widget_about .widget-content .btn-primary {
+    font-size: 15px;
+    padding: 8px 15px;
+  }
+}
+
+
+.widget_about .widget-content .btn-primary_2 {
+  margin-top: 10px;
+  font-size: 16px;
+  padding: 10px 20px 9px;
+}
+
+@media only screen and (max-width: 767px) {
+  .widget_about .widget-content .btn-primary_2 {
     font-size: 15px;
     padding: 8px 15px;
   }
