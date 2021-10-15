@@ -21,6 +21,107 @@ body {
     overflow: hidden;
 }
 
+.btn {
+    -webkit-transition: all 0.3s ease 0.02s;
+    transition: all 0.3s ease 0.02s;
+}
+
+.btn:active,
+.btn:focus {
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.125) inset;
+}
+
+.btn {
+    border: 0px solid;
+    border-radius: 7px;
+    font-weight: 700;
+    font-size: 14px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+@media (min-width: 768px) {
+    .btn {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .btn {
+        font-size: 16px;
+    }
+}
+
+.btn-default {
+    border-radius: 7px;
+    padding: 10px 25px 8px;
+    color: #cc0000;
+    background-color: transparent;
+    border: 1px solid #cc0000;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    overflow: hidden;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 1199px) {
+    .btn-default {
+        padding: 10px 25px 7px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .btn-default {
+        padding: 9px 20px;
+    }
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    color: white !important;
+    background-color: #cc0000;
+}
+
+.btn-primary.active:focus:not(:disabled):not(.disabled),
+.btn-primary:focus {
+    box-shadow: 0 0 0 0rem rgba(38, 143, 255, 0);
+}
+
+.btn-primary {
+    border-radius: 5px;
+    color: white;
+    border: 2px solid #CC0000;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: ease-in 0.25s;
+    transition: ease-in 0.25s;
+    background-color: #cc0000;
+    padding: 12px 25px;
+    margin-top: 33px;
+}
+
+@media (min-width: 768px) {
+    .btn-primary {
+        padding: 14px 35px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .btn-primary {
+        padding: 16px 50px;
+    }
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: white;
+    color: #cc0000;
+}
+
+
+
 .container:hover .top:before,
 .container:hover .top:after,
 .container:hover .bottom:before,
