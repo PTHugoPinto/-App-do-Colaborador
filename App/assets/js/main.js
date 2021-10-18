@@ -100,7 +100,7 @@
 		--------------------------------------------- */
 		sticky_header: function () {
 			var w = $(window).width();
-			if (w > 1200) {
+			if (w > 200) {
 				$(window).scroll(function() {
 					if ($(this).scrollTop() > 10){  
 						$('.site-header.default-header-style').addClass("sticky");

@@ -7,8 +7,9 @@
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    z-index: 100;
+    z-index: 1001;
 }
+
 
 @media only screen and (max-width: 1200px) {
     .scroll-down {

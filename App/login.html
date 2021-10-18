@@ -1,37 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
-    <title>Login Form</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="./assets/css/login.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App do Colaborador</title>
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/android-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-icon-144x144.png" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="../App/assets/css/login.css">
 
     <link rel="stylesheet" href="/css/transition.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+
+
+    <!-- App do Colaborador - FUJITSU SANS Custom Font
+	================================================== -->
+    <style>
+        @font-face {
+            src: url(./assets/localFonts/FujitsuSansMedium.ttf);
+            font-family: "FujitsuSansMedium";
+        }
+    </style>
 
 </head>
 
-<body>
-    <!-- partial:index.partial.html -->
-    <section>
-        <div class="container" onload="onload">
-            <div class="top"></div>
-            <div class="bottom"></div>
-            <div class="center">
-                <h2>Insira o seu Pin</h2>
-                <input type="email" placeholder="Insira o seu Pin" />
-                <button class="btn btn-primary">Login </button>
-                <br>
-                <h3> <a href="./index-App.html" style="text-decoration: none; color: dimgray;">Voltar
-                        à HomePage</a></h3>
+<body id="particles-js">
+    <!--form area start-->
+    <div class="form">
+        <!--Login form start-->
+        <form class="login-form" action="" method="post">
+            <img src="./assets/images/icon/services/login_form_fts.png"
+                style="align-items: center; max-width: 33%; margin-bottom: 20px;" alt="">
+            <input class="user-input" type="text" name="" placeholder="Introduza o seu PIN" required>
+            <br>
+            <br>
+            <div class="options-01">
+                <label class="remember-me"> <input type="checkbox" name="">Remember me</label>
+                <a href="./index-App.html">Home Page</a>
             </div>
-        </div>
-    </section>
-    <!-- partial -->
-    <script src='https://codepen.io/banik/pen/3f837b2f0085b5125112fc455941ea94.js'></script>
+            <input class="btn" type="submit" name="" value="Entrar">
+            <div class="options-02">
+                <p>Não está registado ? <a href="#"> Reportar</a></p>
+            </div>
+        </form>
+        <!--Login form END-->
+        <!--Sign up form Start-->
+        <form class="signup-form" action="" method="post">
+            <img src="./assets/images/icon/services/login_form_fts.png"
+                style="align-items: center; max-width: 33%; margin-bottom: 20px;" alt="">
+            <input class="user-input" type="text" name="" placeholder="Username" required>
+            <input class="user-input" type="email" name="" placeholder="Email Adress" required>
+
+            <input class="btn" type="submit" name="" placeholder="SIGN UP">
+            <div class="options-02">
+                <p>Agora não ! <a href="./index-App.html"> Voltar à Home page</a></p>
+            </div>
+        </form>
+        <!--Sign up form END-->
+    </div>
+    <!--form area END-->
+
+    <script src="./assets/js/login.js"></script>
+
+
+
+    <script type="text/javascript">
+        $('.options-02 a').click(function () {
+            $('form').animate({
+                height: "toggle",
+                opacity: "toggle"
+            }, "slow");
+        });
+    </script>
+
 </body>
 
 </html>
