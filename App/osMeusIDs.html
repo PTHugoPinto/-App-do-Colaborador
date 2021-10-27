@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Basic Page Needs
+    ================================================== -->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<!-- Specific Meta
+    ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<!-- Titles
+    ================================================== -->
+	<title>@App do Colaborador</title>
+
+	<!-- Favicons
+    ================================================== -->
+	<link rel="shortcut icon" href="assets/images/favicon.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/android-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-icon-144x144.png" />
+
+	<!-- Custom Font
+	================================================== -->
+	<!-- Welcome App - FUJITSU SANS Custom Font
+	================================================== -->
+	<style>
+		@font-face {
+			src: url(./assets/localFonts/FujitsuSansMedium.ttf);
+			font-family: "FujitsuSansMedium";
+		}
+	</style>
+	<style>
+		* {
+			box-sizing: border-box
+		}
+
+		/* Style the tab */
+		.tab {
+			float: left;
+			border: 3px solid #ccc;
+			background-color: #f1f1f1;
+			width: 30%;
+			height: 300px;
+			border-bottom-left-radius: 25px;
+		}
+
+		/* Style the buttons inside the tab */
+		.tab button {
+			display: block;
+			background-color: inherit;
+			color: black;
+			padding: 22px 16px;
+			width: 100%;
+			border: none;
+			outline: none;
+			text-align: left;
+			cursor: pointer;
+			transition: 0.3s;
+			font-size: 17px;
+		}
+
+		/* Change background color of buttons on hover */
+		.tab button:hover {
+			background-color: #ddd;
+		}
+
+		/* Create an active/current "tab button" class */
+		.tab button.active {
+			background-color: #CC0000;
+			color: #fff;
+		}
+
+		/* Style the tab content */
+		.tabcontent {
+			float: left;
+			padding: 0px 12px;
+			border: 3px solid #ccc;
+			width: 70%;
+			border-left: none;
+			height: 300px;
+			border-top-right-radius: 25px;
+		}
+	</style>
+
+
+	<!-- CSS
+    ================================================== -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+	<link rel="stylesheet" href="assets/css/simple-scrollbar.css" />
+	<link rel="stylesheet" href="assets/css/odometer-theme-default.css" />
+	<link rel="stylesheet" href="assets/css/fontawesome.all.min.css" />
+	<link rel="stylesheet" href="/css/transition.css">
+
+
+	<!-- This style use for this page -->
+	<link rel="stylesheet" href="assets/css/jquery.animatedheadline.css" />
+
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="./assets/css/scrollDown.css">
+
+	<script src="assets/js/modernizr.min.js"></script>
+
+
+	<!-- Welcome App - FUJITSU SANS Custom Font
+	================================================== -->
+	<style>
+		@font-face {
+			src: url(./assets/localFonts/FujitsuSansMedium.ttf);
+			font-family: "FujitsuSansMedium";
+		}
+	</style>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navigation-area">
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		Start Site Header
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+	<header class="site-header default-header-style">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-12">
+					<div class="navigation-area">
+						<!-- Site Branding -->
+						<div class="site-branding">
+							<a href="index.html">
+								<img src="assets/images/logo/logo.png" alt="Site Logo" />
+							</a>
+						</div><!--  /.site-branding -->
+
+						<!-- Site Navigation -->
+						<div class="site-navigation">
+							<nav class="navigation">
+								<!-- Main Menu -->
+								<div class="menu-wrapper">
+									<div class="menu-content">
+										<ul class="mainmenu">
+											<li>
+												<a class="nav-link" href="./index-App.html">Home</a>
+											</li>
+											<li>
+												<a class="nav-link" href="./aMinhaArea.html">A Minha Área</a>
+											</li>
+											<li>
+												<a class="nav-link" href="../App/heathAndSafety.html">Health &
+													Safety</a>
+											</li>
+											<li>
+												<a class="nav-link" href="./RH.html">RH</a>
+											</li>
+											<li>
+												<a class="nav-link" href="./contactosIT.html">Internal Systems</a>
+											</li>
+											<li>
+												<a class="nav-link" href="./sobreNos.html">Contactos Fujitsu</a>
+											</li>
+										</ul> <!-- /.menu-list -->
+									</div> <!-- /.hours-content-->
+								</div><!-- /.menu-wrapper -->
+							</nav>
+						</div><!-- /.site-navigation -->
+						<div class="hamburger-menus">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div><!-- /.hamburger-menus -->
+					</div><!-- /.navigation-area -->
+				</div><!-- /.col-12 -->
+			</div><!-- /.row -->
+		</div><!-- /.container-fluid -->
+		<div class="mobile-sidebar-menu sidebar-menu">
+			<div class="overlaybg"></div>
+		</div>
+	</header>
+	<!--~~./ end site header ~~-->
+
+	<!--********************************************************-->
+	<!--********************* SITE CONTENT *********************-->
+	<!--********************************************************-->
+	<div class="site-content">
+
+		<a class="gotopbtn" href="./index-App.html"> <i class="fas fa-arrow-left"></i></a>
+
+		<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Start Testimonial Block
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+		<div id="testimonial-block" class="testimonial-block pd-t-170" style="margin-top: 33px;">
+			<div class="container container-1200">
+				<div class="row justify-content-center">
+					<div class="col-lg-8">
+						<div class="section-title text-center">
+							<h2 class="title-main">
+								01 <span>Os Meus ID´s</span>
+							</h2><!-- /.title-main -->
+							<p class="sub-title">shaping tomorrow with you</p>
+						</div><!-- /.section-title -->
+					</div><!-- /.col-lg-8 -->
+				</div><!-- /.row -->
+
+				<section class="section" id="features" style="padding-bottom: 77px;">
+					<div class="container">
+						<div class="row vertical-content">
+							<div class="col-sm-6">
+								<img src="./assets/images/widget/qualidade.png" style="max-width: 50%; height: auto;"
+									class="img-fluid" alt="img">
+							</div>
+							<div class="col-sm-6">
+								<div class="features-alt">
+									<div class="feature-alt-icon mb-2">
+										<i class="pe-7s-bicycle"></i>
+									</div>
+									<h4 class="text-muted">Bem-vindo(a),</h4>
+									<h3>Nome Colaborador </h3>
+									<p class="text-muted">ESTA É A MENSAGEM PERSONALIZADA DE RH : Lorem ipsum dolor sit
+										amet consectetur adipisicing elit. At
+										explicabo quae, tempora, facere incidunt maxime consequatur placeat, maiores
+										aspernatur accusantium quam quod molestiae corrupti quas saepe necessitatibus
+										praesentium ullam nulla!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section style="padding-bottom: 500px;">
+
+					<div class="tab">
+						<button class="tablinks" onclick="openCity(event, 'Colaborador')"
+							id="defaultOpen">Colaborador</button>
+						<button class="tablinks" onclick="openCity(event, 'Função')">Função</button>
+						<button class="tablinks" onclick="openCity(event, 'SAP')">SAP Id</button>
+					</div>
+					<div id="Colaborador" class="tabcontent">
+						<h3 style="padding-top: 20px; color: gray;">Colaborador</h3>
+						<hr>
+						<br>
+						<p>Número: Número</p>
+						<p>Nome: Nome Colaborador</p>
+						<p>Data de Nascimento: Data</p>
+					</div>
+					<div id="Função" class="tabcontent">
+						<h3 style="padding-top: 20px; color: gray;">Função</h3>
+						<hr>
+						<br>
+						<p>Função: Função Colaborador</p>
+						<p>Unidade: Unidade Colaborador</p>
+						<p>Chefia: Chefia / Contacto Principal</p>
+					</div>
+					<div id="SAP" class="tabcontent">
+						<h3 style="padding-top: 20px; color: gray;">SAP Id</h3>
+						<hr>
+						<br>
+						<p>SAP Id: 000000</p>
+					</div>
+				</section>
+
+
+
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</div>
+		<!--~~./ end testimonial block ~~-->
+
+
+
+		<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Start Site Footer
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+		<footer id="contact-block" class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="contact-block">
+							<div class="section-title">
+								<h2 class="title-main">
+									02 <span>Contactos</span>
+								</h2><!-- /.title-main -->
+								<p class="sub-title">shaping tomorrow with you</p>
+							</div><!-- /.section-title -->
+							<div class="contact-form-area">
+								<form id="contact_form" class="contact-form" action="#">
+									<div class="row gx-4">
+										<div class="col-lg-6 col-md-6">
+											<div class="form-group">
+												<input id="name" name="name" type="text" class="form-control"
+													placeholder="Nome*">
+											</div>
+										</div>
+										<!--./ col-lg-6-->
+										<div class="col-lg-6 col-md-6">
+											<div class="form-group">
+												<input class="form-control" id="email" name="email" type="email"
+													placeholder="Email*">
+											</div>
+										</div>
+										<!--./ col-lg-6 -->
+										<div class="col-12">
+											<div class="form-group">
+												<textarea id="message" name="message" class="form-control" rows="4"
+													placeholder="Podemos ajudar?"></textarea>
+											</div>
+										</div><!-- /.col-12 -->
+										<div class="col-12">
+											<button type="submit" class="btn btn-primary" style="border-radius: 5px;"
+												data-aos="fade-right" data-aos-duration="500"
+												data-aos-delay="200">enviar</button>
+										</div>
+										<!--./ col-lg-6 -->
+									</div><!-- /.row -->
+								</form><!-- /.contact-form -->
+							</div><!-- /.contact-form-area -->
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="footer-content-wrapper">
+							<div class="footer-widget-area">
+								<div class="row">
+									<!--~~~~~ Start Widget Links ~~~~~-->
+									<div class="col-lg-6 col-md-6">
+										<aside class="widget widget_links">
+											<h2 class="widget-title"><span>Quick Link</span></h2>
+											<div class="widget-content">
+												<ul>
+													<li><a href="https://www.fujitsu.com/pt/services/">Serviços</a>
+													</li>
+													<li><a href="https://www.fujitsu.com/pt/products/">Produtos</a>
+													</li>
+													<li><a href="https://www.fujitsu.com/pt/solutions/">Soluções</a>
+													</li>
+													<li><a href="https://www.fujitsu.com/pt/about/">Sobre a
+															Fujitsu</a>
+													</li>
+												</ul>
+											</div>
+										</aside>
+									</div>
+									<!--~./ end links widget ~-->
+									<!--~~~~~ Start Widget Links ~~~~~-->
+									<div class="col-lg-6 col-md-6">
+										<aside class="widget widget_contact">
+											<div class="widget-content">
+												<div class="single-contact-info">
+													<div class="icon">
+														<i class="fas fa-envelope"></i>
+													</div>
+													<p><a
+															href="mailto:hugo.pinto@fujitsu.com">hugo.pinto@fujitsu.com</a>
+													</p>
+												</div><!-- /.single-contact-info -->
+												<div class="single-contact-info">
+													<div class="icon">
+														<i class="fas fa-phone-alt"></i>
+													</div>
+													<p>351 - 217 244 444</p>
+												</div><!-- /.single-contact-info -->
+											</div>
+										</aside>
+									</div>
+									<!--~./ end links widget ~-->
+								</div>
+							</div>
+							<!--~./ end footer widgets area ~-->
+							<div class="copyright-text text-center">
+								<p>Copyright @ <a href="#">Fujitsu </a> 2021</p>
+							</div>
+							<!--~./ end copyright text ~-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--~./ end site footer ~-->
+	</div>
+	<!--~~./ end site content ~~-->
+
+	<!-- All The JS Files
+			================================================== -->
+
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+	<script src="assets/js/simple-scrollbar.min.js"></script>
+	<script src="assets/js/background-parallax.js"></script>
+	<script src="assets/js/theia-sticky-sidebar.min.js"></script>
+	<script src="assets/js/ResizeSensor.min.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/isotope.pkgd.min.js"></script>
+	<script src="assets/js/packery-mode.pkgd.min.js"></script>
+	<script src="assets/js/scrolla.jquery.min.js"></script>
+	<script src="assets/js/odometer.min.js"></script>
+	<script src="assets/js/isInViewport.jquery.js"></script>
+	<script src="assets/js/contact.js"></script>
+	<script src="assets/js/main.js"></script><!-- main-js -->
+
+	<!-- This script use for this page -->
+	<script src="assets/js/heandline.js"></script>
+	<script src="assets/js/accordion.js"></script>
+
+	<!-- REQUEST FULL SCREEN MODE -->
+	<script>
+		function getFullscreenElement() {
+			return document.fullscreenElement ||
+				document.webkitfullscreenElement ||
+				document.mozfullscreenElement ||
+				document.msfullscreenElement;
+		}
+
+		function toggleFullscreen() {
+			if (getFullscreenElement()) {
+				document.exitFullscreen();
+			} else {
+				document.documentElement.requestFullscreen().catch(console.log);
+			}
+		}
+
+		document.addEventListener("dblclick", () => {
+			toggleFullscreen();
+		});
+
+		document.addEventListener("fullscreenchange", () => {
+			console.log("full Screen Changed !")
+		})
+	</script>
+	<script>
+		function openCity(evt, cityName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+	</script>
+
+
+</body>
+
+</html>
